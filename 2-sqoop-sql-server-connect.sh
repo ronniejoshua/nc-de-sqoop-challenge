@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SQOOP USER GUIDE
+# https://sqoop.apache.org/docs/1.4.7/SqoopUserGuide.html
+
+
 # Setting up SQOOP for interacting with SQL Server
 # ------------------------------------------------
 # Here we use curl, before we used wget
@@ -58,9 +62,9 @@ docker inspect <docker-container-id>
 
 
 # Testing if the connection works 
-sudo -u hdfs sqoop list-tables \
+sqoop list-tables \
 --connect "jdbc:sqlserver://172.18.0.3:1433;instanceName=data-engr-sql-svr;databaseName=AdventureWorks2019" \
 --driver com.microsoft.sqlserver.jdbc.SQLServerDriver \
 --username sa \
---password MY_MS_SQL_PW
+--password Naya@12345
 
