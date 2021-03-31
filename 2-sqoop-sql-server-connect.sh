@@ -66,5 +66,5 @@ sqoop list-tables \
 --connect "jdbc:sqlserver://172.18.0.3:1433;instanceName=data-engr-sql-svr;databaseName=AdventureWorks2019" \
 --driver com.microsoft.sqlserver.jdbc.SQLServerDriver \
 --username sa \
---password Naya@12345
+--password MY_MS_SQL_PW
 
